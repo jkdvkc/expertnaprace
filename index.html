@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ============ SEO (Slovensko) ============ -->
+<title>Podklady pre bakalárske a diplomové práce na mieru | Expert na prácu</title>
+<meta name="description" content="Profesionálne podklady pre bakalárske, diplomové a MBA práce na mieru. Rešerš zdrojov, prezentácie na obhajobu, podnikateľské plány. Od 8,90 €/NS, cenová ponuka do 2 hodín, 100 % diskrétne. Celé Slovensko.">
+<meta name="keywords" content="bakalárske práce na mieru, diplomové práce, podklady k záverečným prácam, rešerš zdrojov, prezentácia na obhajobu, podnikateľský plán, odborné články, MBA práca, Slovensko">
+<meta name="author" content="Expert na prácu">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.expertnaprace.sk/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="sk_SK">
+<meta property="og:title" content="Expert na prácu – podklady pre bakalárske a diplomové práce">
+<meta property="og:description" content="Kvalitné, rýchle a diskrétne podklady pre záverečné práce. Od 8,90 €/NS, ponuka do 2 hodín.">
+<meta property="og:url" content="https://www.expertnaprace.sk/">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- Schema pre Google -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"ProfessionalService",
+  "name":"Expert na prácu",
+  "description":"Profesionálne podklady pre bakalárske, diplomové a MBA práce, rešerš zdrojov, prezentácie na obhajobu, podnikateľské plány a analýzy.",
+  "url":"https://www.expertnaprace.sk/",
+  "email":"tkreativec@gmail.com",
+  "areaServed":{"@type":"Country","name":"Slovensko"},
+  "priceRange":"od 8,90 €/NS",
+  "makesOffer":{
+    "@type":"Offer",
+    "priceCurrency":"EUR",
+    "price":"8.90",
+    "description":"Podklady pre bakalársku prácu – cena za normostranu (1800 znakov vrátane medzier)."
+  },
+  "aggregateRating":{"@type":"AggregateRating","ratingValue":"5","reviewCount":"18"}
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --ink:#14161d;
+    --ink-2:#1a1d27;
+    --card:#20242f;
+    --card-2:#252a37;
+    --line:#2f3543;
+    --paper:#f4efe3;
+    --paper-ink:#2c2820;
+    --brass:#c8a04a;
+    --brass-soft:#e3c581;
+    --green:#6fae86;
+    --text:#ece7dd;
+    --muted:#9a978d;
+    --radius:16px;
+    --maxw:1120px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--ink);color:var(--text);font-family:'Inter',system-ui,sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  h1,h2,h3,.serif{font-family:'Fraunces',Georgia,serif;line-height:1.1;letter-spacing:-.01em}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+
+  /* ambient warm lamp glow */
+  .glow{position:fixed;inset:0;z-index:0;pointer-events:none;
+    background:radial-gradient(680px 460px at 78% -8%,rgba(200,160,74,.14),transparent 62%),
+               radial-gradient(560px 460px at 5% 20%,rgba(111,174,134,.06),transparent 60%);}
+  header,main,footer{position:relative;z-index:1}
+
+  /* nav */
+  header{position:sticky;top:0;z-index:50;backdrop-filter:blur(12px);background:rgba(20,22,29,.72);border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+  .brand{font-family:'Fraunces';font-weight:600;font-size:1.15rem;letter-spacing:-.02em;display:flex;align-items:center;gap:10px}
+  .brand .seal{width:32px;height:32px;border-radius:50%;border:1px solid var(--brass);display:grid;place-items:center;color:var(--brass);font-family:'Fraunces';font-weight:700;font-size:.9rem}
+  .nav-links{display:flex;gap:28px;align-items:center}
+  .nav-links a{color:var(--muted);font-size:.93rem;transition:color .2s}
+  .nav-links a:hover{color:var(--text)}
+  .btn{display:inline-flex;align-items:center;gap:9px;font-weight:600;font-size:.93rem;padding:12px 20px;border-radius:11px;border:1px solid transparent;cursor:pointer;transition:transform .15s,background .2s,box-shadow .2s;white-space:nowrap}
+  .btn:active{transform:translateY(1px)}
+  .btn-brass{background:var(--brass);color:#20180a;box-shadow:0 10px 26px -10px rgba(200,160,74,.65)}
+  .btn-brass:hover{background:var(--brass-soft)}
+  .btn-ghost{border-color:var(--line);color:var(--text)}
+  .btn-ghost:hover{border-color:var(--brass);color:var(--brass-soft)}
+  .burger{display:none;background:none;border:1px solid var(--line);border-radius:9px;padding:9px 11px;cursor:pointer}
+  .burger span{display:block;width:20px;height:2px;background:var(--text);margin:4px 0}
+
+  /* hero */
+  .hero{padding:64px 0 30px;display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+  .eyebrow{display:inline-flex;align-items:center;gap:9px;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--brass-soft);border:1px solid var(--line);border-radius:100px;padding:6px 14px;margin-bottom:24px}
+  .eyebrow .dot{width:7px;height:7px;border-radius:50%;background:var(--green)}
+  .hero h1{font-size:clamp(2.3rem,5.2vw,3.7rem);font-weight:600}
+  .hero h1 em{font-style:italic;color:var(--brass-soft)}
+  .hero .lead{color:var(--muted);font-size:clamp(1.02rem,1.5vw,1.16rem);max-width:48ch;margin:22px 0 28px}
+  .hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:26px}
+  .chips{display:flex;flex-wrap:wrap;gap:10px}
+  .chip-t{font-size:.82rem;color:var(--muted);border:1px solid var(--line);border-radius:100px;padding:7px 14px}
+  .chip-t b{color:var(--text)}
+
+  /* signature: price estimator (paper card) */
+  .estimator{background:var(--paper);color:var(--paper-ink);border-radius:20px;padding:30px 28px;position:relative;box-shadow:0 40px 80px -34px rgba(0,0,0,.7);overflow:hidden}
+  .estimator::before{content:"";position:absolute;left:26px;top:0;bottom:0;width:1px;background:rgba(200,80,74,.35)}
+  .estimator .lbl{font-family:'Fraunces';font-weight:600;font-size:1.35rem;padding-left:16px}
+  .estimator .sub{color:#6c6558;font-size:.86rem;padding-left:16px;margin:4px 0 20px}
+  .est-row{padding-left:16px;margin-bottom:18px}
+  .est-row label{display:block;font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;color:#7a7365;margin-bottom:8px}
+  .est-input{display:flex;align-items:center;gap:12px}
+  .est-input input[type=range]{flex:1;accent-color:var(--brass)}
+  .est-input .val{font-family:'Fraunces';font-weight:700;font-size:1.4rem;min-width:64px;text-align:right}
+  .est-out{padding:18px 16px 0;border-top:1px dashed #cdc4b0;margin-top:6px;display:flex;align-items:baseline;justify-content:space-between}
+  .est-out .p{font-family:'Fraunces';font-weight:700;font-size:2.3rem;color:var(--paper-ink)}
+  .est-out .p small{font-size:1rem;font-weight:500;color:#6c6558}
+  .est-out .note{font-size:.74rem;color:#8a8271;max-width:16ch;text-align:right}
+  .estimator .cta-row{padding-left:16px;margin-top:20px}
+  .estimator .cta-row a{background:var(--paper-ink);color:var(--paper);display:inline-flex;padding:11px 18px;border-radius:10px;font-weight:600;font-size:.9rem}
+  .estimator .cta-row a:hover{background:#403a2e}
+
+  /* section */
+  .sec{padding:70px 0}
+  .sec-head{max-width:640px;margin-bottom:40px}
+  .sec-head .k{font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--brass-soft)}
+  .sec-head h2{font-size:clamp(1.8rem,3.6vw,2.6rem);font-weight:600;margin:12px 0 12px}
+  .sec-head p{color:var(--muted)}
+
+  /* services */
+  .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .svc{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px;transition:transform .18s,border-color .2s,background .2s}
+  .svc:hover{transform:translateY(-4px);border-color:var(--brass);background:var(--card-2)}
+  .svc .n{font-family:'Fraunces';font-style:italic;color:var(--brass);font-size:1.1rem;margin-bottom:14px}
+  .svc h3{font-size:1.2rem;font-weight:600;margin-bottom:8px}
+  .svc p{color:var(--muted);font-size:.92rem}
+
+  /* how it works */
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+  .step{background:var(--ink-2);border:1px solid var(--line);border-radius:var(--radius);padding:24px;position:relative}
+  .step .num{font-family:'Fraunces';font-weight:700;font-size:2.4rem;color:var(--brass);opacity:.9;line-height:1;margin-bottom:12px}
+  .step h3{font-size:1.05rem;font-weight:600;margin-bottom:8px}
+  .step p{color:var(--muted);font-size:.88rem}
+
+  /* pricing */
+  .price-wrap{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center}
+  .price-card{background:var(--paper);color:var(--paper-ink);border-radius:20px;padding:34px;box-shadow:0 40px 80px -34px rgba(0,0,0,.6)}
+  .price-card .t{font-family:'Fraunces';font-style:italic;color:#8a6a20;font-size:1rem}
+  .price-card .big{font-family:'Fraunces';font-weight:700;font-size:3rem;line-height:1;margin:6px 0 4px}
+  .price-card .big small{font-size:1.1rem;font-weight:500;color:#6c6558}
+  .price-card .u{color:#6c6558;font-size:.86rem;margin-bottom:22px}
+  .price-list{display:grid;gap:11px}
+  .price-list li{list-style:none;display:flex;gap:11px;align-items:flex-start;font-size:.93rem}
+  .price-list .tick{flex:none;width:20px;height:20px;border-radius:50%;background:#e4dcc8;display:grid;place-items:center;margin-top:2px}
+  .price-list .tick svg{width:12px;height:12px;stroke:#4b7a5c}
+  .price-note{color:var(--muted)}
+  .price-note h3{font-family:'Fraunces';font-size:1.6rem;margin-bottom:14px;color:var(--text)}
+  .price-note p{margin-bottom:14px}
+
+  /* testimonials */
+  .revs{columns:3;column-gap:16px}
+  .rev{break-inside:avoid;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;margin-bottom:16px}
+  .rev .stars{color:var(--brass);font-size:.85rem;letter-spacing:2px;margin-bottom:8px}
+  .rev p{font-size:.92rem;color:var(--text)}
+  .rev .who{margin-top:10px;font-size:.82rem;color:var(--muted);font-style:italic;font-family:'Fraunces'}
+
+  /* contact */
+  .contact{background:linear-gradient(180deg,var(--ink-2),var(--card));border:1px solid var(--line);border-radius:22px;padding:44px;text-align:center}
+  .contact h2{font-size:clamp(1.8rem,3.4vw,2.6rem);font-weight:600;margin-bottom:12px}
+  .contact h2 em{font-style:italic;color:var(--brass-soft)}
+  .contact p{color:var(--muted);max-width:52ch;margin:0 auto 26px}
+  .contact .btn-brass{font-size:1rem;padding:14px 26px}
+  .contact .mail{display:block;margin-top:16px;color:var(--muted);font-size:.9rem}
+  .contact .mail a{color:var(--brass-soft)}
+
+  footer{border-top:1px solid var(--line);padding:36px 0 44px;margin-top:24px}
+  .foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;align-items:center;color:var(--muted);font-size:.85rem}
+
+  @media(max-width:900px){
+    .nav-links{display:none}
+    .hero{grid-template-columns:1fr;gap:34px}
+    .svc-grid,.steps{grid-template-columns:1fr 1fr}
+    .price-wrap{grid-template-columns:1fr}
+    .revs{columns:2}
+    .burger{display:block}
+    .nav-cta .btn-ghost{display:none}
+  }
+  @media(max-width:560px){
+    .svc-grid,.steps{grid-template-columns:1fr}
+    .revs{columns:1}
+    .hero{padding:44px 0 20px}
+  }
+  @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="glow"></div>
+
+<header>
+  <div class="wrap nav">
+    <a href="#top" class="brand"><span class="seal">E</span>Expert na prácu</a>
+    <nav class="nav-links">
+      <a href="#sluzby">Služby</a>
+      <a href="#ako">Ako to funguje</a>
+      <a href="#cennik">Cenník</a>
+      <a href="#referencie">Referencie</a>
+    </nav>
+    <div class="nav-cta" style="display:flex;gap:10px;align-items:center">
+      <a href="#cennik" class="btn btn-ghost">Cenník</a>
+      <a href="mailto:tkreativec@gmail.com?subject=Nezáväzná%20cenová%20ponuka" class="btn btn-brass">Napíšte mi</a>
+    </div>
+    <button class="burger" onclick="var n=document.querySelector('.nav-links');n.style.cssText='display:flex;flex-direction:column;position:absolute;top:68px;right:22px;background:var(--card);border:1px solid var(--line);padding:16px;border-radius:12px;gap:14px'">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+<!-- HERO -->
+<section class="hero wrap">
+  <div>
+    <span class="eyebrow"><span class="dot"></span>Kvalitne · Rýchlo · Diskrétne</span>
+    <h1>Podklady pre bakalárske a diplomové práce <em>na mieru.</em></h1>
+    <p class="lead">Odborné a originálne spracovanie podkladov k záverečným prácam, rešerš zdrojov, prezentácie na obhajobu aj podnikateľské plány. Ušetríte čas aj nervy – o zvyšok sa postarám.</p>
+    <div class="hero-cta">
+      <a href="mailto:tkreativec@gmail.com?subject=Nezáväzná%20cenová%20ponuka&body=Dobrý%20deň,%0D%0A%0D%0Atyp%20práce:%20%0D%0Atéma:%20%0D%0Arozsah%20(NS):%20%0D%0Atermín:%20%0D%0A%0D%0AĎakujem." class="btn btn-brass">Získať cenovú ponuku</a>
+      <a href="#sluzby" class="btn btn-ghost">Pozrieť služby</a>
+    </div>
+    <div class="chips">
+      <span class="chip-t">Ponuka <b>do 2 hodín</b></span>
+      <span class="chip-t"><b>100 %</b> diskrétne</span>
+      <span class="chip-t">Korektúra <b>v cene</b></span>
+      <span class="chip-t">od <b>8,90 €/NS</b></span>
+    </div>
+  </div>
+
+  <!-- signature: price estimator -->
+  <div class="estimator">
+    <div class="lbl">Orientačná cena</div>
+    <div class="sub">Posuňte počet normostrán a získate hrubý odhad.</div>
+    <div class="est-row">
+      <label for="ns">Počet normostrán (1 NS = 1800 znakov)</label>
+      <div class="est-input">
+        <input id="ns" type="range" min="1" max="80" value="20" oninput="calc()">
+        <span class="val"><span id="nsVal">20</span> NS</span>
+      </div>
+    </div>
+    <div class="est-out">
+      <div class="p" id="price">178&nbsp;<small>€ a viac</small></div>
+      <div class="note">Presná cena podľa témy a termínu.</div>
+    </div>
+    <div class="cta-row">
+      <a href="mailto:tkreativec@gmail.com?subject=Cenová%20ponuka&body=Dobrý%20deň,%20mám%20záujem%20o%20cca%20">Chcem presnú ponuku →</a>
+    </div>
+  </div>
+</section>
+
+<!-- SLUŽBY -->
+<section class="sec wrap" id="sluzby" style="scroll-margin-top:80px">
+  <div class="sec-head">
+    <div class="k">Čo pre vás spracujem</div>
+    <h2>Služby na mieru</h2>
+    <p>Každý projekt spracovávam individuálne, s dôrazom na kvalitu, akademické normy a dodržanie termínu.</p>
+  </div>
+  <div class="svc-grid">
+    <div class="svc"><div class="n">01</div><h3>Podklady k záverečným prácam</h3><p>Bakalárske, diplomové aj MBA práce na mieru – originálne spracovanie, ktoré spĺňa akademické normy a požiadavky.</p></div>
+    <div class="svc"><div class="n">02</div><h3>Rešerš zdrojov</h3><p>Nájdem a vyhodnotím relevantné akademické zdroje, články a knihy pre vašu prácu. Ušetríte čas, kvalitu zachovám.</p></div>
+    <div class="svc"><div class="n">03</div><h3>Prezentácie na obhajobu</h3><p>Vizuálne atraktívne a obsahovo prepracované prezentácie, ktoré zanechajú skvelý prvý dojem a podporia váš úspech.</p></div>
+    <div class="svc"><div class="n">04</div><h3>Odborné články a texty</h3><p>Kvalitné a pútavé články na mieru pre váš blog či web – informatívne aj čitateľsky atraktívne.</p></div>
+    <div class="svc"><div class="n">05</div><h3>Podnikateľské plány</h3><p>Podrobný podnikateľský plán s jasným prehľadom o vašich cieľoch a stratégiách.</p></div>
+    <div class="svc"><div class="n">06</div><h3>Prieskumy a analýzy</h3><p>Podrobné prieskumy a analýzy s dôrazom na kvalitu a relevantnosť – dáta, ktoré podporia vaše rozhodnutia.</p></div>
+  </div>
+</section>
+
+<!-- AKO TO FUNGUJE -->
+<section class="sec wrap" id="ako" style="scroll-margin-top:80px">
+  <div class="sec-head">
+    <div class="k">Jednoducho a rýchlo</div>
+    <h2>Ako spolupracujeme</h2>
+  </div>
+  <div class="steps">
+    <div class="step"><div class="num">01</div><h3>Zadanie</h3><p>Napíšete mi e-mail s popisom vašich potrieb. Čím viac detailov, tým rýchlejšie pripravím presnú ponuku – odpovedám do 2 hodín.</p></div>
+    <div class="step"><div class="num">02</div><h3>Cenová ponuka</h3><p>Pripravím nezáväznú ponuku na mieru. Platba naraz alebo v splátkach – podľa vašich preferencií.</p></div>
+    <div class="step"><div class="num">03</div><h3>Spracovanie</h3><p>Po odsúhlasení sa pustím do práce. Individuálny prístup, dôraz na kvalitu a dodržanie termínov, priebežná komunikácia.</p></div>
+    <div class="step"><div class="num">04</div><h3>Odovzdanie</h3><p>Hotový projekt odovzdám načas. Prípadné úpravy a doplnenia sú zahrnuté v cene – práca nekončí, kým nie ste spokojní.</p></div>
+  </div>
+</section>
+
+<!-- CENNÍK -->
+<section class="sec wrap" id="cennik" style="scroll-margin-top:80px">
+  <div class="sec-head">
+    <div class="k">Férovo a transparentne</div>
+    <h2>Cenník</h2>
+  </div>
+  <div class="price-wrap">
+    <div class="price-card">
+      <div class="t">Bakalárska práca</div>
+      <div class="big">od 8,90 €<small> / NS</small></div>
+      <div class="u">1 NS = normostrana (1800 znakov vrátane medzier)</div>
+      <ul class="price-list">
+        <li><span class="tick"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Rýchle dodanie v termíne podľa vašich potrieb</li>
+        <li><span class="tick"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Ponuka na mieru s odpoveďou do 2 hodín</li>
+        <li><span class="tick"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Kompletná e-mailová podpora počas spolupráce</li>
+        <li><span class="tick"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Korektúra a úpravy zahrnuté v cene</li>
+        <li><span class="tick"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>100 % diskrétnosť a profesionálny prístup</li>
+      </ul>
+    </div>
+    <div class="price-note">
+      <h3>Cena vždy na mieru</h3>
+      <p>Každý projekt prispôsobujem vašim potrebám. Konečná cena závisí od náročnosti témy, termínu dodania a typu práce.</p>
+      <p>Zaručujem férové, transparentné a dostupné riešenie pre každého. Napíšte mi zadanie a pripravím nezáväznú ponuku.</p>
+      <a href="mailto:tkreativec@gmail.com?subject=Nezáväzná%20cenová%20ponuka" class="btn btn-brass" style="margin-top:8px">Získať nezáväznú ponuku</a>
+    </div>
+  </div>
+</section>
+
+<!-- REFERENCIE -->
+<section class="sec wrap" id="referencie" style="scroll-margin-top:80px">
+  <div class="sec-head">
+    <div class="k">Čo hovoria klienti</div>
+    <h2>Referencie</h2>
+    <p>Každý projekt spracovávam s dôrazom na diskrétnosť, kvalitu a dôveru.</p>
+  </div>
+  <div class="revs">
+    <div class="rev"><div class="stars">★★★★★</div><p>Promptné doručenie, skvelé pochopenie zadania a kreatívny prístup v rámci témy. Som veľmi spokojný.</p><div class="who">— Michal</div></div>
+    <div class="rev"><div class="stars">★★★★★</div><p>Veľmi rýchle dodanie, úžasný prístup, profesionalita. Strašne moc vám ďakujem.</p><div class="who">— Zuzana</div></div>
+    <div class="rev"><div class="stars">★★★★★</div><p>S prácou som nadmieru spokojná, rýchla spätná väzba, vysoká profesionalita a výborná orientácia v mojej odbornej téme. Vrelo odporúčam.</p><div class="who">— a1.a1</div></div>
+    <div class="rev"><div class="stars">★★★★★</div><p>Ďakujem veľmi pekne. Robíte kvalitnú prácu a pomáhate zaneprázdneným ľuďom.</p><div class="who">— stxnkx</div></div>
+    <div class="rev"><div class="stars">★★★★★</div><p>Absolútne profesionálna práca, výborná komunikácia. Plne odporúčam a teším sa na budúcu spoluprácu.</p><div class="who">— adsrecognition</div></div>
+    <div class="rev"><div class="stars">★★★★★</div><p>Výborná spolupráca – včasné dodanie a trpezlivé spracovanie pripomienok.</p><div class="who">— Roman_7</div></div>
+    <div class="rev"><div class="stars">★★★★★</div><p>Ďakujem za vyhotovenie podnikateľského plánu, som nadmieru spokojná. Takto by som si to sama nevedela napísať. Prajem veľa úspechov.</p><div class="who">— Martina M.</div></div>
+    <div class="rev"><div class="stars">★★★★★</div><p>Kvalitné spracovanie podkladov a rýchle doručenie k požadovanému termínu.</p><div class="who">— nikki.no96</div></div>
+    <div class="rev"><div class="stars">★★★★★</div><p>Všetko prebehlo bez problémov, super komunikácia, rýchla dohoda a dodanie v dohodnutom termíne. Odporúčam.</p><div class="who">— pado</div></div>
+  </div>
+</section>
+
+<!-- KONTAKT -->
+<section class="sec wrap">
+  <div class="contact">
+    <h2>Ušetrite čas a stres – <em>získajte pomoc ešte dnes.</em></h2>
+    <p>Napíšte mi typ práce, tému, rozsah a termín. Pripravím nezáväznú cenovú ponuku na mieru – odpovedám do 2 hodín.</p>
+    <a href="mailto:tkreativec@gmail.com?subject=Nezáväzná%20cenová%20ponuka&body=Dobrý%20deň,%0D%0A%0D%0Atyp%20práce:%20%0D%0Atéma:%20%0D%0Arozsah%20(NS):%20%0D%0Atermín:%20%0D%0A%0D%0AĎakujem." class="btn btn-brass">Napíšte mi e-mail</a>
+    <span class="mail">alebo priamo na <a href="mailto:tkreativec@gmail.com">tkreativec@gmail.com</a></span>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <a href="#top" class="brand"><span class="seal">E</span>Expert na prácu</a>
+    <div>© 2026 Expert na prácu · Podklady pre bakalárske a diplomové práce · Slovensko</div>
+  </div>
+</footer>
+
+<script>
+  var RATE = 8.90;
+  function calc(){
+    var ns = +document.getElementById('ns').value;
+    document.getElementById('nsVal').textContent = ns;
+    var p = Math.round(ns * RATE);
+    document.getElementById('price').innerHTML = p + '&nbsp;<small>€ a viac</small>';
+  }
+  calc();
+</script>
+</body>
+</html>
