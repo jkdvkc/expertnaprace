@@ -96,7 +96,7 @@
 <h2>Nezáväzná ponuka</h2>
 <p>Správa sa odošle priamo cez formulár. Stačí krstné meno alebo prezývka.</p>
 <p class="contact-direct">Alebo napíšte priamo na <a href="mailto:info@expertnaprace.sk">info@expertnaprace.sk</a>.</p>
-<form action="https://formsubmit.co/info@expertnaprace.sk" id="inquiry-form" method="POST">
+<form action="https://api.web3forms.com/submit" id="inquiry-form" method="POST">
 <div class="form-grid">
 <div><label class="field-label" for="f-name">Meno alebo prezývka</label>
 <input autocomplete="given-name" id="f-name" name="meno" placeholder="Napríklad Martina" type="text"/></div>
@@ -111,7 +111,7 @@
 <textarea id="f-msg" maxlength="12000" minlength="10" name="zadanie" placeholder="Téma, škola, čo potrebujete a čo už máte hotové." required=""></textarea></div>
 </div>
 <p class="form-note">Odpoveď do dvoch hodín v pracovný deň. Rozsah konzultácie sa dohodne vopred.</p>
-<label class="form-consent"><input name="privacy_acknowledged" required="" type="checkbox"/> <span>Beriem na vedomie spracovanie údajov na vybavenie dopytu a pravidlá použitia podkladov. <a href="/ochrana-osobnych-udajov/">Ochrana údajov</a></span></label><div aria-hidden="true" class="honeypot"><label>Leave empty<input autocomplete="off" name="_honey" tabindex="-1"/></label></div><input name="_subject" type="hidden" value="Expert na prácu – nezáväzný dopyt"/><input name="_template" type="hidden" value="table"/><p aria-live="polite" id="form-status" role="status"></p><button class="btn btn-gold" style="margin-top:16px;" type="submit">Odoslať zadanie</button></form>
+<label class="form-consent"><input name="privacy_acknowledged" required="" type="checkbox"/> <span>Beriem na vedomie spracovanie údajov na vybavenie dopytu a pravidlá použitia podkladov. <a href="/ochrana-osobnych-udajov/">Ochrana údajov</a></span></label><div aria-hidden="true" class="honeypot"><label>Leave empty<input autocomplete="off" name="botcheck" tabindex="-1" type="checkbox"/></label></div><input name="access_key" type="hidden" value="98062834-a0ad-4772-84c8-dad40fc6a57c"/><input name="subject" type="hidden" value="Expert na prácu – nezáväzný dopyt (SK)"/><input name="from_name" type="hidden" value="Expert na prácu"/><p aria-live="polite" id="form-status" role="status"></p><button class="btn btn-gold" style="margin-top:16px;" type="submit">Odoslať zadanie</button></form>
 </div>
 </div>
 </section>
@@ -152,6 +152,6 @@
 </div>
 </div>
 </footer>
-<script defer="" src="/static/app.js?v=1792760132"></script>
+<script defer="" src="/static/app.js?v=202611051013"></script>
 </body>
 </html>

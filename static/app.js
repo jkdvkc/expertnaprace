@@ -53,7 +53,7 @@
   }
   var inquiry=document.getElementById('inquiry-form');
   if(inquiry){
-    var strings={sk:{sending:'Odosielam…',success:'Formulár bol odoslaný službe na doručenie. Ak odpoveď nepríde, skontrolujte aj priečinok Spam.',error:'Správu sa nepodarilo potvrdiť. Zadanie zostalo vyplnené; skúste odoslanie neskôr.',privacy:'Potvrďte, prosím, oboznámenie s ochranou údajov.'},en:{sending:'Sending…',success:'The form was submitted to the delivery service. Please check your spam folder if you do not receive a reply.',error:'Submission could not be confirmed. Your text is preserved; please try again later.',privacy:'Please acknowledge the privacy notice.'},hu:{sending:'Küldés…',success:'Az űrlapot továbbítottuk a kézbesítési szolgáltatásnak. Ellenőrizze a levélszemét mappát is.',error:'A küldést nem sikerült megerősíteni. A beírt szöveg megmaradt; próbálja újra később.',privacy:'Kérjük, vegye tudomásul az adatkezelési tájékoztatót.'}}[lang];
+    var strings={sk:{sending:'Odosielam…',success:'Správa bola odoslaná. Odpoveď príde do dvoch hodín v pracovný deň. Ak nepríde, skontrolujte aj priečinok Spam.',error:'Správu sa nepodarilo potvrdiť. Zadanie zostalo vyplnené; skúste odoslanie neskôr.',privacy:'Potvrďte, prosím, oboznámenie s ochranou údajov.'},en:{sending:'Sending…',success:'Your message has been sent. You will get a reply within two hours on weekdays. Please check your spam folder if nothing arrives.',error:'Submission could not be confirmed. Your text is preserved; please try again later.',privacy:'Please acknowledge the privacy notice.'},hu:{sending:'Küldés…',success:'Az üzenetet elküldtük. Munkanapon két órán belül válaszolunk. Ha nem érkezik válasz, ellenőrizze a levélszemét mappát is.',error:'A küldést nem sikerült megerősíteni. A beírt szöveg megmaradt; próbálja újra később.',privacy:'Kérjük, vegye tudomásul az adatkezelési tájékoztatót.'}}[lang];
     var params=new URLSearchParams(location.search),ns=params.get('ns'),estimate=params.get('estimate');
     var typeMap={seminar:0,bachelor:1,master:2,rigorous:3,dissertation:4,proofreading:5,statistics:6};
     if(Object.prototype.hasOwnProperty.call(typeMap,params.get('type')))document.getElementById('f-type').selectedIndex=typeMap[params.get('type')];
@@ -66,13 +66,12 @@
     inquiry.addEventListener('submit',async function(e){
       e.preventDefault();if(busy||!inquiry.reportValidity())return;
       var status=document.getElementById('form-status'),button=inquiry.querySelector('[type=submit]');
-      if(inquiry.querySelector('[name=_honey]').value)return;
+      var bot=inquiry.querySelector('[name=botcheck]');if(bot&&bot.checked)return;
       busy=true;button.disabled=true;var label=button.textContent;button.textContent=strings.sending;status.textContent='';
       var payload=Object.fromEntries(new FormData(inquiry).entries());payload.language=lang;payload.page=location.origin+location.pathname;
       var controller=new AbortController(),timeout=setTimeout(function(){controller.abort();},15000);
       try{
-        var endpoint=inquiry.action.replace('https://formsubmit.co/','https://formsubmit.co/ajax/');
-        var res=await fetch(endpoint,{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify(payload),signal:controller.signal});
+        var res=await fetch(inquiry.action,{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify(payload),signal:controller.signal});
         var result=await res.json();if(!res.ok||!(result.success===true||result.success==='true'))throw new Error('Submission not confirmed');
         status.textContent=strings.success;inquiry.reset();
       }catch(err){status.textContent=strings.error;}
